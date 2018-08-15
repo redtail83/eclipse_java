@@ -1,0 +1,21 @@
+---
+# tasks file for eclipse_java
+
+# install Eclipse
+- name: download Eclipse from official site
+  get_url:
+    url: "{{ site_url }}{{ file_name }}"
+    dest: /tmp
+    mode: 0440
+
+- name: unarchive Eclipse
+  unarchive:
+    src: "/tmp/{{ file_name }}"
+    dest: /opt
+    copy: no
+
+- name: make directory for Eclipse
+  file: path=/opt/eclipse state=directory mode=0775
+
+- name: make directory for Eclipse workspace
+  file: path=/opt/eclipse-workspace state=directory mode=0775
