@@ -14,10 +14,10 @@ Role Variables
 Here is the list of all variables for this role.
 ```yml
 # Base URL of Eclipse download site.
-site_url: http://ftp.jaist.ac.jp/pub/eclipse/technology/epp/downloads/release/photon/R/
+site_url: http://ftp.jaist.ac.jp/pub/eclipse/technology/epp/downloads/release/2018-12/R/
 
 # Archive file name.
-file_name: eclipse-java-photon-R-linux-gtk-x86_64.tar.gz
+file_name: eclipse-java-2018-12-R-linux-gtk-x86_64.tar.gz
 ```
 
 Dependencies
